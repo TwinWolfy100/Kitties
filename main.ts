@@ -1,3 +1,6 @@
+namespace SpriteKind {
+    export const Follower = SpriteKind.create()
+}
 function setUpStars () {
     for (let index = 0; index < 10; index++) {
         star = sprites.create(img`
@@ -220,7 +223,7 @@ function setUpPlayers () {
         . b 5 5 b c d d 5 5 5 5 5 d b . 
         b b c c c d d d d 5 5 5 b b . . 
         . . . c c c c c c c c b b . . . 
-        `, SpriteKind.Player)
+        `, SpriteKind.Follower)
     Duck.follow(Leader, 35)
     Other_Car = sprites.create(img`
         . . . . . . f f f f . . . . . . 
@@ -239,7 +242,7 @@ function setUpPlayers () {
         . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
         . . . . . f f f f f f . . . . . 
         . . . . . f f . . f f . . . . . 
-        `, SpriteKind.Player)
+        `, SpriteKind.Follower)
     scene.cameraFollowSprite(Leader)
     tiles.placeOnTile(Other_Car, tiles.getTileLocation(3, 5))
     Other_Car.follow(Leader, 30)
@@ -260,7 +263,7 @@ function setUpPlayers () {
         . . . f 3 3 5 3 3 5 3 3 f . . . 
         . . . f f f f f f f f f f . . . 
         . . . . . f f . . f f . . . . . 
-        `, SpriteKind.Player)
+        `, SpriteKind.Follower)
     setUpFollower(Follower, 40)
     Follower = sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -277,7 +280,7 @@ function setUpPlayers () {
         . . . f 5 5 5 5 5 5 5 f f f . . 
         . . . f 5 4 5 f f f 5 f . . . . 
         . . . f f f f f . . f f . . . . 
-        `, SpriteKind.Player)
+        `, SpriteKind.Follower)
     setUpFollower(Follower, 50)
     Follower = sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -296,7 +299,7 @@ function setUpPlayers () {
         . . . . f f 4 4 4 4 c d b c . . 
         . . . . . . f f f f d d d c . . 
         . . . . . . . . . . c c c . . . 
-        `, SpriteKind.Player)
+        `, SpriteKind.Follower)
     setUpFollower(Follower, 70)
     Follower = sprites.create(img`
         . . . . . . . . . . . . . . . . 
@@ -315,7 +318,7 @@ function setUpPlayers () {
         . . . f f 1 1 1 b b b 5 5 f . . 
         . . . . . f f f 5 5 5 5 5 f . . 
         . . . . . . . . f f f f f f . . 
-        `, SpriteKind.Player)
+        `, SpriteKind.Follower)
     setUpFollower(Follower, 80)
     Follower = sprites.create(img`
         e e e . . . . e e e . . . . 
@@ -332,7 +335,7 @@ function setUpPlayers () {
         . f d d d d d b d d f f f . 
         . f d f f f d f f d f . . . 
         . f f . . f f . . f f . . . 
-        `, SpriteKind.Player)
+        `, SpriteKind.Follower)
     setUpFollower(Follower, 90)
 }
 function setUpShark () {
