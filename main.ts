@@ -104,16 +104,16 @@ sprites.onOverlap(SpriteKind.Food, SpriteKind.Player, function (sprite, otherSpr
         game.splash("You have completed the level")
         levelNumber = info.score() / 10 + 1
         if (levelNumber == 2) {
-            tiles.setTilemap(tilemap`level16`)
+            tiles.setTilemap(tilemap`level8`)
         }
         if (levelNumber == 3) {
             tiles.setTilemap(tilemap`level16`)
         }
         if (levelNumber == 4) {
-            tiles.setTilemap(tilemap`level16`)
+            tiles.setTilemap(tilemap`level23`)
         }
         if (levelNumber == 5) {
-            tiles.setTilemap(tilemap`level16`)
+            tiles.setTilemap(tilemap`level24`)
         }
         if (levelNumber == 6) {
             game.over(true, effects.confetti)
